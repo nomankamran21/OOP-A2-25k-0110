@@ -1,0 +1,89 @@
+OOP Assignment 2. Submission Explanations
+
+------------------------------------------
+
+
+Note:
+
+This document contains all the changes and additions made to the the previous assignmnet 1 of OOP to fulfill the requirements of Assignment 2.
+
+1. Inheritance (Requirement 1)
+
+------------------------------
+
+- User Class: I extended the User Class into Buyer, Seller and Admin via inheritence.
+
+. The reason for this is to create a hierarchy where common account data like name and email are shared. Specific roles have unique features. For example the Buyer has a budget and the Seller has a shop name.
+
+- Vehicle Class: I extended the Vehicle Class into Car and Bike via inheritence.
+
+. The reason for this is to demonstrate vehicle types inheriting core transport data like brand and price but adding specific details like engine size for bikes or number of doors for cars.
+
+2. Polymorphism (Requirement 2)
+
+-------------------------------
+
+- Functions: I used virtual void displayInfo() in the Vehicle hierarchy. as well as in the user hierarchy.
+
+. The reason for this is so that when we call displayInfo() on a Vehicle pointer it correctly calls the Car or Bike version depending on the object at runtime.
+
+- Function Overriding: Each derived class, like Car, Bike, Buyer and so on overrides base class functions like display() or getUserType().
+
+3. Abstraction (Requirement 3)
+
+------------------------------
+
+- Abstract Base Classes: I created or improved four classes:
+
+. The User Class, which cannot be instantiated and serves as a template for accounts.
+
+. The Vehicle Class, which cannot be instantiated and serves as a template for vehicles.
+
+. The IDisplayable Class, which's just  a pure interface that forces any class to implement a display() method.
+
+. The IBaseEntity Class, which's just a pure interface that forces any class to implement a getID() method.
+
+- Pure Virtual Functions: I used 'virtual... = 0' In these classes to define the required interfaces.
+
+4. Operator Overloading (Requirement 4)
+
+---------------------------------------
+
+- Operator == for the User Class: This compares two users based on their email.
+
+. The reason for this is to check if a user is already registered or unique.
+
+- Operator == for the Vehicle Class: This compares two vehicles by their ID.
+
+- Operator + for the Marketplace Class: This allows adding a Listing object directly to the Marketplace array.
+
+. The reason for this is to make adding listings cleaner in main.cpp. For example 'market + newListing'.
+
+- Operator + for the Vehicle Class: This combines the prices of two vehicles.
+
+. The reason for this is that it is useful for calculating costs of multiple vehicles.
+
+5. Friend Functions (Requirement 5)
+
+-----------------------------------
+
+- The areInSameCity function for the User Class: This accesses private address data to see if users live in the area.
+
+- The isMoreExpensive function for the Vehicle Class: This accesses price data to compare values.
+
+- The isSellerVerified function for the Seller and Admin Classes: This checks seller status using level data.
+
+- The canBuyerAfford function for the Buyer and Vehicle Classes: This accesses budget and price to see if a deal is possible.
+
+- The reason for these functions is to fulfill the requirement of accessing data from outside the class while keeping the data encapsulated.
+
+6. Memory (Integration)
+
+-------------------------------
+
+- I used 'new' and 'delete' in main.cpp for objects and handled copying (deep/ shallow) in the Listing Class.
+
+. The reason for this is to handle the behavior of the Vehicle Class in a Marketplace where we do not know the vehicle type before hand.
+
+
+thnx for reading till the end :) .
