@@ -3,7 +3,8 @@
 
 Welcome to the **PakWheels Pro Max** Marketplace! This project is an advanced Object-Oriented Programming (OOP) assignment built in C++, focusing on a vehicle marketplace system. 
 
-![Marketplace Overview](../images/Screenshot%202026-05-15%20163904.png)
+![Marketplace Overview]<img width="860" height="424" alt="Screenshot 2026-05-15 163712" src="https://github.com/user-attachments/assets/c87c2b4b-5809-467a-9216-b3d8e2098f8d" />
+
 
 ## 📌 Project Overview
 This project builds upon Assignment 1, introducing advanced OOP concepts like Inheritance, Polymorphism, Abstraction, Operator Overloading, and Friend Functions. The platform allows Buyers and Sellers to interact, list vehicles (Cars and Bikes), and process transactions.
