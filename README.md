@@ -28,7 +28,8 @@ Vehicle* v1 = new Car("Toyota", "Camry", 2021, 8500000, 15000, luxuryFeat, 4, "A
 Vehicle* v2 = new Bike("Honda", "CBR", 2023, 1200000, 2000, luxuryFeat, 600, "Sports", true);
 ```
 
-![Vehicle Data](../images/Screenshot%202026-05-15%20162332.png)
+![Vehicle Data]<img width="730" height="795" alt="Screenshot 2026-05-15 163917" src="https://github.com/user-attachments/assets/3bec1e9d-f88d-402e-be7d-db56aab77b1d" />
+
 
 ### 2. Polymorphism
 Virtual functions ensure that the correct method is called for an object, regardless of the pointer type.
@@ -76,7 +77,8 @@ if (canBuyerAfford(*buyer1, *v2)) {
 }
 ```
 
-![Output Results](../images/Screenshot%202026-05-15%20162250.png)
+![Output Results]<img width="921" height="905" alt="image" src="https://github.com/user-attachments/assets/ba058d84-f3b7-48d9-90f8-d09e5a66c0e9" />
+
 
 ---
 
